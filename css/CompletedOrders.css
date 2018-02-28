@@ -1,0 +1,311 @@
+*{
+	margin: 0;
+	padding:0;
+}
+html{
+	font-size: 100px;
+}
+body{
+	font-size: 16px;
+	background-color:#f7f7f7; 
+}
+.fobox{
+	width: 100%;
+	height: 100%;
+}
+.fobox .tt{
+	width: 100%;
+    height: 0.44rem;
+    font-size: 0.18rem;
+    color: #333333;
+    text-align: center;
+    line-height: 0.44rem;
+   /* padding-top: 0.28rem;*/
+    background: #FFFFFF;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+    position: relative;
+}
+.closed {
+    display: inline-block;
+    width: 0.14rem;
+    height: 0.14rem;
+    left: 0.45rem;
+    position: absolute;
+    top: 0.15rem;
+}
+.return {
+    display: inline-block;
+    width: 0.14rem;
+    height: 0.14rem;
+    left: 0.15rem;
+    position: absolute;
+    top: 0.15rem;
+}
+.fobox .foboxone{
+	width: 100%;
+	height: 1.36rem;
+	background-color: white;
+	margin-top: 0.16rem;
+}
+.foboxonecontent{
+	width: 3.09rem;
+	margin: 0 auto;
+	height:1.2rem;
+}
+.foboxonecontent .spanone{
+	width:3.09rem;
+	height: 0.45rem;
+	line-height: 0.55rem;
+	border-bottom: 1px solid #E7E7E7;
+	font-family: PingFangSC-Regular;
+	font-size:0.18rem;
+	color: #333333;
+	letter-spacing: 0;
+	/*font-weight: bold;*/
+}
+.foboxonecontent .div{
+	margin-top: 0.04rem;
+	height: 0.22rem;
+}
+.foboxonecontent .divline{
+	margin-top: 0.01rem;
+	height: 0.4rem;
+}
+.foboxonecontent .divone{
+	width: 2.11rem;
+	float: left;
+	font-size: 0.14rem;
+	color: #666666;
+}
+.foboxonecontent .divtwo{
+	width: 0.59rem;
+	float:right;
+	text-align: right;
+	font-size: 0.14rem;
+	/*font-weight: bold;*/
+	color: black
+}
+.fobox .foboxtwo{
+	width: 100%;
+	height: 1.16rem;
+	background-color: white;
+	margin-top: 0.16rem;
+}
+.foboxtwocontent{
+	width: 3.09rem;
+	margin: 0 auto;
+	height:1rem;
+}
+.foboxtwocontent .spanone{
+	width:3.09rem;
+	height: 0.45rem;
+	line-height: 0.55rem;
+	border-bottom: 1px solid #E7E7E7;
+	font-family: PingFangSC-Regular;
+	font-size:0.18rem;
+	color: #333333;
+	letter-spacing: 0;
+	/*font-weight: bold;*/
+}
+.foboxtwocontent .div2one{
+	width: 2.57rem;
+	float: left;
+	font-size: 0.14rem;
+	color: #666666;
+}
+.foboxtwocontent .div{
+	height: 0.2rem;
+	margin-top: 0.03rem;
+}
+.foboxthere{
+	width: 100%;
+	height: 0.85rem;
+	background-color: white;
+	margin-top: 0.16rem;
+}
+.foboxtherecontent{
+	width: 3.09rem;
+	margin: 0 auto;
+	height:0.69rem;
+}
+.foboxtherecontent .div{
+	width: 2.6rem;
+	height: 0.4rem;
+	float: left;
+	margin-top: 0.145rem;
+}
+.foboxtherecontent .divline{
+	width:0.4rem; 
+	float: right;
+	height: 0.4rem;
+	margin-top: 0.225rem;
+}
+.foboxtherecontent img{
+	width: 0.4rem;
+	height: 0.4rem;
+}
+.foboxtherecontent .spanone{
+	font-size: 0.18rem;
+	/*font-weight: bold;*/
+	color: black;
+	border-bottom: 1px solid #E7E7E7;
+	margin-top: 0.03rem;
+}
+.foboxtherecontent .div{
+	height: 0.45rem;
+}
+.foboxtherecontent .div3one{
+	height: 0.2rem;
+	font-size: 0.14rem;
+}
+.foboxtherecontent .map{
+	height: 0.2rem;
+	vertical-align: middle;
+}
+.foboxtherecontent .fuh{
+	height: 0.2rem;
+	width: 0.2rem;
+	margin-left: 0.05rem;
+}
+.foboxtherecontent .fuh img{
+	height: 0.1rem;
+	width: 0.1rem;
+	vertical-align: middle;
+}
+.MOcontentsafe{
+	width: 100%;
+	height: 1.88rem;
+	background-color: white;
+	font-size: 0.14rem;
+}
+.MOcontenttwo{
+	width:3.09rem;
+	height: 1.88rem;
+	margin: 0 auto; 
+	margin-top: 0.16rem;
+	font-size: 0.14rem;
+}
+.foboxfour{
+	width: 100%;
+	height: 1.96rem;
+	background-color: white;
+	margin-top: 0.16rem;
+}
+.foboxfourcontent{
+	width: 3.09rem;
+	margin: 0 auto;
+	height:1.8rem;
+}
+.fopone{
+	width: 100%;
+	height: 0.43rem;
+	line-height: 0.5rem;
+	border-bottom: 1px solid #E7E7E7;
+}
+.fopone .spanone{
+	margin-left: 0.02rem;
+	vertical-align: middle;
+	color: #333333;
+	font-family: PingFangSC-Regular;
+	font-size: 0.18rem;
+	letter-spacing: 0;
+	/*font-weight: bold;*/
+}
+.foimg{
+	width: 0.18rem;
+	height: 0.18rem;
+	vertical-align:middle;
+}
+.foptwo,.fopthere{
+	width: 100%;
+	height: 0.6rem;
+	margin-top: 0.04rem;
+}
+.foptwo .divone{
+	width: 0.1rem;
+	float: left;
+	font-size: 0.14rem;
+}
+.foptwo .divtwo{
+	width: 2.99rem;
+	float: right;
+	font-size: 0.14rem;
+}
+.fopthere .divone{
+	width: 0.1rem;
+	float: left;
+	font-size: 0.14rem;
+}
+.fopthere .divtwo{
+	width: 2.99rem;
+	float: right;
+	font-size: 0.14rem;
+}
+.foboxfive{
+	width: 100%;
+	height: 1.34rem;
+	background-color: white;
+	margin-top: 0.16rem;
+}
+.foboxfivecontent{
+	width: 3.09rem;
+	margin: 0 auto;
+	height:1.18rem;
+}
+.foboxfivecontent .spanone{
+	width: 3.09rem;
+    height: 0.45rem;
+    line-height: 0.55rem;
+    border-bottom: 1px solid #E7E7E7;
+    font-family: PingFangSC-Regular;
+    font-size: 0.18rem;
+    color: #333333;
+    letter-spacing: 0;
+   /* font-weight: bold;*/
+}
+.foboxfivecontent .div{
+	width: 100%;
+	height: 0.6rem;
+	margin-top: 0.03rem;
+}
+.foboxfivecontent .div .div2one,.div3one,.div4one{
+	height: 0.2rem;
+	font-size: 0.14rem;
+}
+.foboxsix{
+	width: 100%;
+	height:0.52rem;
+	background-color: white;
+	margin-top:0.16rem;
+	margin-bottom:16px;
+}
+.foboxsixcontent{
+	width: 3.09rem;
+	margin: 0 auto;
+}
+.foboxsixcontent .div3one{
+	height: 0.52rem;
+	line-height: 0.52rem;
+	font-size: 0.14rem;
+}
+.foboxsever{
+	width: 100%;
+	height: 1.74rem;
+	background-color: white;
+	margin-top: 0.16rem;
+}
+.foboxsevercontent{
+	width: 3.09rem;
+	margin: 0 auto;
+	height:1.74rem;
+}
+.foboxsevercontent .yhqx{
+	height: 0.2rem;
+	margin-top: 0.04rem;
+	margin-left: -0.06rem;
+	font-size: 0.14rem;
+}
+.yhqxcontent{
+	font-size: 0.14rem;
+	height: 0.8rem;
+}

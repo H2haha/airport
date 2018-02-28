@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css" />
+    <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.3&plugin=AMap.Geocoder"></script>
+    <script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/mapcontent.css">
+</head>
+
+<body>
+    <div class="navigation"><img src="images/nav.png"></div>
+    <a href="index.html">
+        <!-- <div class="backingOut">
+        <img src="images/comeback.png" alt="">
+    </div> -->
+    </a>
+    <div id="container"></div>
+    <div class="show">
+        <div class="input">
+            <div class="mapcontent">
+                <a href="javascript:;" id="openApp"><span class="gaodemap">高德地图</span></a>
+                <a href="javascript:;" id="openApp2"><span class="baidumap">百度地图</span></a>
+               <!--  <a href="javascript:;" id="openApp3"><span class="applemap">苹果地图</span></a> -->
+            </div>
+            <span class="noneclose">取消</span>
+        </div>
+    </div>
+<div class="layer">
+</div>
+    <script src="https://webapi.amap.com/js/marker.js"></script>
+    <script type="text/javascript">
+    //初始化地图、图标
+    var marker, map = new AMap.Map("container", {
+        resizeEnable: true,
+        zoom: 15,
+        center: [116.5316400000, 40.0403200000]
+    });
+    addMarker();
+    //调用图标函数，定位
+    function addMarker() {
+        if (marker) {
+            return;
+        }
+        marker = new AMap.Marker({
+            icon: "http://webapi.amap.com/theme/v1.3/markers/n/mark_b.png",
+            position: [116.5316400000, 40.0403200000]
+        });
+        marker.setMap(map);
+    }
+        $(".navigation").click(function() {
+            if (navigator.userAgent.match(/android/i)) {
+                // alert(111);
+                $(".layer").show();
+                // $("#container").css({"filter": "blur(5px)"});
+                // $('.navigation').css({"filter": "blur(2px)"});
+                $('.input').show();
+                $('.show').show();
+            }
+        })
+        $(".noneclose").click(function() {
+            $('.show').hide();
+            $('.input').hide();
+            $(".layer").hide();
+            // $("#container").css({ "filter": "blur(0px)" });
+            // $('.navigation').css({ "filter": "blur(0px)" });
+        })
+    
+    document.getElementById('openApp').onclick = function(e) {
+        if (navigator.userAgent.match(/android/i)) {
+            window.location.href = 'androidamap://navi?sourceApplication=applicationName&backScheme=applicationScheme&poiname=fangheng&poiid=BGVIS&lat=40.0403200000&lon=116.5316400000&dev=1&style=2';
+            window.setTimeout(function() {
+                window.location.href = "http://a.app.qq.com/o/simple.jsp?pkgname=com.autonavi.minimap"; //android 下载地址
+            }, 2000)
+        }
+    };
+    document.getElementById('openApp2').onclick = function(e) {
+        if (navigator.userAgent.match(/android/i)) {
+            window.location.href = "bdapp://map/direction?destination=北京市朝阳区庞大庆鸿雷克萨斯汽车销售服务有限公司&mode=driving&coord_type=gcj02";
+            window.setTimeout(function() {
+                window.location.href = "http://a.app.qq.com/o/simple.jsp?pkgname=com.baidu.BaiduMap"; //android 下载地址
+            }, 2000)
+        }
+    };
+    if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)) {
+        $('.navigation').click(function(){
+            $('.input').hide();
+            $('.show').hide();
+            // alert(111);
+            var lat1 = 40.0403540000;
+            var lon1 = 116.5312020000;
+            var addressName1 = "北京市朝阳区庞大庆鸿雷克萨斯汽车销售服务有限公司";
+            function App(lat1, lon1,addressName1) {
+                if (isIOS()) {
+                    // alert(lat1);
+                    window.webkit.messageHandlers.appleMap.postMessage({ latitude: lat1, longitude: lon1,addressName:addressName1 });
+                }
+            }
+            function isIOS() {
+                //判断是安卓还是ios端
+                if (/(ipad|iphone|mac)/i.test(navigator.userAgent)) {
+                    return true;
+                }
+            };
+            App(lat1, lon1,addressName1);
+        })  
+    };
+    </script>
+    <script type="text/javascript" src="js/AdaptationPhone.js"></script>
+    <script type="text/javascript">
+    //导航显示点击事件$(
+    // $(".navigation").click(function() {
+    //     $("#container").css({ "filter": "blur(5px)" });
+    //     $('.navigation').css({ "filter": "blur(2px)" });
+    //     $('.backingOut').css({ "filter": "blur(2px)" });
+    //     $('.input').show();
+    //     $('.show').show();
+    // })
+    // $(".noneclose").click(function() {
+    //     $('.show').hide();
+    //     $('.input').hide();
+    //     $("#container").css({ "filter": "blur(0px)" });
+    //     $('.navigation').css({ "filter": "blur(0px)" });
+    //     $('.backingOut').css({ "filter": "blur(0px)" });
+    // })
+    </script>
+</body>
+
+</html>

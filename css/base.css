@@ -1,0 +1,65 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, select, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family:Microsoft Yahei,SimSun,Helvetica;
+  font-size: 14px;
+  color: #757575; }
+
+select {
+  outline: none; }
+
+input[type="text"] {
+  -webkit-box-shadow: 0 0 0px 1000px white inset; }
+
+img {
+  vertical-align: middle;
+  border: none; }
+
+a {
+  cursor: pointer;
+  text-decoration: none; }
+
+/* 清除浮动 */
+.clearfix {
+  *zoom: 1;
+  /*IE/7/6*/ }
+
+.clearfix:after {
+  content: "\200B";
+  display: block;
+  height: 0;
+  clear: both; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.ib {
+  display: inline-block; }
+
+.tc {
+  text-align: center; }
+
+.tl {
+  text-align: left; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: block;}
+ html{
+      font-size: 100px;
+    }
+ body{
+      font-size: 16px;
+    }

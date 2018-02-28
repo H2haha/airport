@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>叮叮泊车</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<link href="css/mobiscroll.animation.css" rel="stylesheet" type="text/css" />
+<link href="css/mobiscroll.widget.css" rel="stylesheet" type="text/css" />
+<link href="css/mobiscroll.widget.ios.css" rel="stylesheet" type="text/css" />
+<link href="css/mobiscroll.scroller.css" rel="stylesheet" type="text/css" />
+<link href="css/mobiscroll.scroller.ios.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+<body class="gray">
+      <!--  <div class="tt">
+          <img src="images/left.png" class="return"/> 
+          <img src="images/close.png" class="closed"/>
+          叮叮泊车
+       </div> -->
+       <div class="stop-time">
+       <img src="images/time.png" class="time"><span class="start">01月20日 17:00</span>
+       <a class="line-bg"><span class="line"></span></a>
+       <span class="end">01月25日</span>
+       <span class="day">共6天</span>
+       </div>               
+       <!-- stop-time end -->
+       <div class="information-bg">
+         <span class="r-tt">取车时间:</span>
+         <input class="receive-time" placeholder="请选择取车时间" type="text"  name="test" id="test3" readonly="true">
+        <!-- <a class="right"><img src="images/arror.png"/></a> -->
+       </div>
+     <!--   information-bg end -->
+         <ul class="information-bg2">
+           <li> <span class="r-tt">联系人:</span>
+          <!--  <input class="receive-time name" placeholder="联系人姓名" id="name" type="text" value="" maxlength="5"> -->
+          <input onkeyup="value=value.replace(/[^\u4E00-\u9FA5]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\u4E00-\u9FA5]/g,''))" 
+           class="receive-time name" placeholder="联系人姓名" id="name"
+           value="" maxlength="5">
+           </li>
+           <li> <span class="r-tt">联系手机:</span>
+           <input class="receive-time phone" placeholder="用于接收短信" id="tel" type="tel" autocomplete="off"
+            name="tel" maxlength="11"  >
+            <span class="ex phone-ex"></span>
+           </li>
+           <li style="border-bottom:none!important;"> <span class="r-tt">车牌号:</span>
+           <input class="receive-time plate" placeholder="泊车车牌号" id="plate" maxlength="8" autocomplete="off" type="text" value=""> <span class="ex plate-ex"></span>
+           </li>
+         </ul>
+<input type="hidden" value="" class="ordercode" />
+<div class="paybg">
+      <div class="pay-ct2">
+      </div>
+      <div class="pay-ct clearfix ">
+         <div class="pay-name">叮叮泊车</div>
+         <div class="count-money">
+         <span id="count-money2">¥100</span>
+         <span class="count-day" id="countday">(4天)</span>
+         </div>
+      </div>
+      <div class="pay-black clearfix ">
+          <div class="pay-left">待支付 : <span id="count-money">¥180</span>
+          <a>
+          <img src="images/top.png" alt="" class="top">
+          <img src="images/down.png" alt="" class="down">
+          </a>
+          </div>
+          <div class="pay-right">
+               <div class="pay-btn">去支付</div>
+          </div>
+      </div>
+</div>
+
+<!-- paybg end -->
+<div class="mesure-bg" style="display:none;">
+         <div class="cancel-bg">
+          <a class="cancel">取消</a>
+         </div>
+         <ul class="pay-mesure">
+            <li><img src="images/zhifubao.png"  class="m-icon"/>支付宝客户端 
+            <input type="button" class="zf" style="width:0.5rem">
+            <img src="images/right.png" class="choice"/>
+            </li>
+            <li><img src="images/weixin.png"  class="m-icon"/>微信客户端
+              <input type="button" class="wx" style="width:0.5rem">
+            <img src="images/point.png" class="choice" /></li>
+         </ul>
+         <div class="payBtn">
+                支付
+         </div>
+</div>
+<div class="layer">
+</div>
+<!-- mesure-bg end -->
+</body>
+   <script type="text/javascript" src="js/AdaptationPhone.js"></script>
+   <script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="js/plug/mobiscroll.core.js"></script>
+    <script src="js/plug/mobiscroll.widget.js"></script>
+    <script src="js/plug/mobiscroll.scroller.js"></script>
+    <script src="js/plug/mobiscroll.util.datetime.js"></script>
+    <script src="js/plug/mobiscroll.datetimebase.js"></script>
+    <script src="js/plug/mobiscroll.widget.ios.js"></script>
+    <script src="js/plug/mobiscroll.i18n.zh.js"></script>
+    <script src="js/information.js"></script>
+    <script src="https://a.alipayobjects.com/g/h5-lib/alipayjsapi/3.0.6/alipayjsapi.min.js"></script>
+    <script type="text/javascript">
+    //调取ios anriod的支付js
+function Success(message) {
+    // alert(message);
+    console.log(message);
+    if (!message== "") {
+        var orderId = message;
+        localStorage.setItem("orderNumber", orderId);
+        window.location.href = "paySuccess.html"; }
+};
+window.onload = Success();
+</script>
+
+</html>

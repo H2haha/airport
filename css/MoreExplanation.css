@@ -1,0 +1,173 @@
+*{
+	margin:0;
+	padding:0;
+}
+html{
+	font-size: 100px;
+}
+body{
+	font-size: 16px;
+	background-color:#f7f7f7; 
+}
+.MEbox{
+	width:100%;
+	height:100%;
+}
+.MEbox .tt{
+	width: 100%;
+    height: 0.44rem;
+    font-size: 0.18rem;
+    color: #333333;
+    text-align: center;
+    line-height: 0.44rem;
+   /* padding-top: 0.28rem;*/
+    background: #FFFFFF;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+    position: relative;
+}
+.MEbox .content{
+	width: 100%;
+	height: 4rem;
+	line-height: 4rem;
+	color: black;
+	font-size: 0.18rem;
+	text-align: center;
+	color:#d25b5b;
+}
+.closed {
+    display: inline-block;
+    width: 0.14rem;
+    height: 0.14rem;
+    left: 0.45rem;
+    position: absolute;
+    top: 0.15rem;
+}
+.return {
+    display: inline-block;
+    width: 0.14rem;
+    height: 0.14rem;
+    left: 0.15rem;
+    position: absolute;
+    top: 0.15rem;
+}
+.MEstopCar{
+	margin:0 auto;
+	margin-top: 0.16rem;
+	width: 3.43rem;
+	height: 0.88rem;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow:#d2d2d2 0px 4px 6px;
+}
+.MEstopCar .MEpone{
+	padding:19px 0 0 10px;
+	height: 0.22rem;
+	line-height: 0.22rem;
+}
+.MEstopCar .MEimage{
+	width: 0.2rem;
+	height: 0.2rem;
+	vertical-align: middle;
+}
+.MEstopCar .waitcapitalAirport,.waitstopcar,.waitPDstopcar{
+	font-family: PingFangSC-Regular;
+	font-size:0.16rem;
+	color: #333333;
+	letter-spacing: 0;
+	font-weight: bold;
+	vertical-align: bottom;
+	margin-left: 0.07rem;
+}
+.MEstopCar .cancelcapitalAirport,.cancelstopcar,.cancelPDstopcar{
+	font-family: PingFangSC-Regular;
+	font-size:0.16rem;
+	color:  #CFCFCF;
+	letter-spacing: 0;
+	font-weight: bold;
+	vertical-align: bottom;
+	margin-left: 0.07rem;
+}
+.MEstopCar .waitcapitalAirport{
+	padding:0 8px 0 0px;
+}
+.MEstopCar .waitPDstopcar{
+	font-size: 0.14rem;
+	font-weight: 100;
+}
+.waitMEline{
+	margin:0 auto;
+	width:3.3rem;
+	height: 0.02rem;
+	background-color: #e4c354;
+}
+.MEstopCar .MEptwo{
+	margin:8px 0 19px 37px;
+}
+.MEptwo .waitGo,.PayMoney,.waitGoPay{
+	font-family: PingFangSC-Light;
+	font-size: 0.14rem;
+	color: #333333;
+	letter-spacing: 0; 
+}
+.MEptwo{
+	height: 0.22rem;
+	line-height: 0.22rem;
+}
+.MEptwo .waitPayMoney{
+	font-size: 0.16rem;
+	letter-spacing:-0.09em; 
+	color: #E04D54;
+	margin-left: 1.2rem;
+}
+.MEptwo .waitGoPay{
+	float: right;
+	margin-right: 0.15rem;
+	color: #E04D54;
+}
+.MEptwo .alreadyPayMoney {
+    margin-left: 1.2rem;
+    font-size: 0.16rem;
+    letter-spacing: -0.09em;
+    color: #666666;
+}
+.MEptwo .alreadyGoPay {
+    float: right;
+	margin-right: 0.15rem;
+    color:#666666;
+}
+
+.MEptwo .cancelPayMoney {
+    margin-left: 1.2rem;
+    font-size: 0.16rem;
+    letter-spacing: -0.09em;
+    color: #CFCFCF;
+}
+.MEptwo .cancelGoPay {
+    float: right;
+	margin-right: 0.15rem;
+    color:#CFCFCF;
+}
+.MEptwo .waitGo, .PayMoney, .waitGoPay {
+    font-family: PingFangSC-Light;
+    font-size: 0.14rem;
+    color:black;
+    letter-spacing: 0;
+}
+.MEptwo .cancelGo,.cancelPayMoney,.cancelGoPay{
+	font-family: PingFangSC-Light;
+    font-size: 0.14rem;
+    color: #CFCFCF;
+    letter-spacing: 0;
+}
+.alreadyMEline {
+    margin: 0 auto;
+    width: 3.3rem;
+    height: 0.02rem;
+    background-color:#9a9a9a;
+}
+.cancelMEline{
+	margin: 0 auto;
+    width: 3.3rem;
+    height: 0.02rem;
+    background-color:#d2d2d2;
+}
